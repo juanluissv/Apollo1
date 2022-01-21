@@ -5,7 +5,7 @@ import "./App.css"
 
 
 const client = new ApolloClient({
-  uri: "http://localhost:4000/"
+  uri: "https://apolloserver22.herokuapp.com/"
 })
 
 
