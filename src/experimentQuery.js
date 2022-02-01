@@ -1,5 +1,17 @@
 import gql from 'graphql-tag';
 
+const experimentsAll =  gql`
+  query {
+    experiments {
+        id
+        title
+        subtitle
+        name
+        status
+    }
+  }
+`;
+
 const experimentsSubmitted =  gql`
   query {
     experiments (status: "submitted") {
@@ -49,4 +61,4 @@ const experimentsUnderway =  gql`
 `;
 
 
-export { experimentsSubmitted, experimentsApproved, experimentsProvisioning, experimentsUnderway }
+export { experimentsAll, experimentsSubmitted, experimentsApproved, experimentsProvisioning, experimentsUnderway }
